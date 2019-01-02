@@ -1,12 +1,15 @@
+
+
 require('../src/data.js');
 
-
-describe('LOL', () => {
-  it('debería ser un objeto', () => {
-    expect(typeof LOL).toBe('object');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+describe('window.dataLOL', () => {
+  it('debería ser una objeto', () => {
+    expect(typeof window.lol).toBe('object');
   });
 });
+
+/*
+  it('deberia mostrar los 5 campeones de la semana', () => {
+    expect(()).toBe('example');
+  });
+*/
