@@ -1,59 +1,5 @@
 # League of Legends para principiantes
 
-Introducción
-
-#Definición del producto
-Interfaz que brinda información puntual y digerida para beginners que no tienen experiencia en el juego y requieren conocer lo indispensable para crecer rapidamente en sus jugadas. 
-
-#User Persona
-Definición persona
-¿Quiénes son los principales usuarios de producto?
-¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-Conocer con cual campeón empezar a jugar, sus roles y descubrir los campeones por rol con sus caracteristicas.
-¿Cuándo utilizan o utilizarían el producto?
-
-#Historias de usuario
-Print de pantalla
-Mencionar y explicar brevemente el porque
-Entrevistas y link a ppt
-
-#Diseño de la Interfaz de Usuario
-
-##Prototipo de baja fidelidad
-Print de los prototipos (posible gif)
-Explicar el porque del diseño
-###Testeos de usabilidad
-Sugerencias de usuarios
-
-##Prototipo de alta fidelidad
-Print de los prototipos (posible gif)
-Explicar el porque del diseño, gama colores, tipografia, secuencia, mobile first
-Zeplin
-###Testeos de usabilidad
-Sugerencias de usuarios
-
-#Como usar
-gif 
-
-#Planificación
-Trello
-Issues
-Tablero 
-Google Calendar
-Sprints tomados
-Excel
-
-#Futuras mejoras
-Chat
-Responsive
-Menu funcional
-Video de toda la interfaz
-Aplicación de metodo para rotación de campeones semanal
-Tutorial hablado
-
-
-
 ## Índice
 
 * [Definición de producto](#definición-del-producto)
@@ -97,7 +43,7 @@ En sus tiempos libres. Normalmente emplean en promedio 3 horas jugando y les agr
 
 ## Historias de usuario
 
-**_Print de pantalla_**
+**_PRINT DE PANTALLA_**
 
 Diseñamos cinco historias útiles y necesarias para que el jugador inicie el juego de la forma más cómoda posible:
 
@@ -111,35 +57,34 @@ _Mostrar los roles por campeón y al mismo tiempo la cantidad total de campeones
 
 * **Tercera historia**
 
-_Visualizar a los todos los campeones por determinado rol: Foto y nombre._
+_Visualizar a los todos los campeones por determinado rol: Foto y nombre. Además podrá ver que están ordenados de forma ascendente (de la A a la Z)._
 
 * **Cuarta historia**
 
 _El usuario podrá conocer a cada campeón en específico con sus respectivas características._
 
-* **Quinta historia**
-
-**_POR COMPLETAR_** 
-
 ## Diseño de la interfaz de usuario
 
-### Prototipo de baja fidelidad
+### **a) Prototipo de baja fidelidad**
 
-**_Print de los prototipos (posible gif)_**
+**_PRINT DE LOS PROTOTIPOS, FOTOS DEL CUADERNO (posible gif)_**
 
 **_El por qué del diseño_**
+
 El enfoque que trabajamos desde el inicio fue pensado en _beginners_ apuntando a que sea lo más visual y práctico posible empleando estadísticas, cards, videos e información puntual que permita brindarle al usuario un diseño centrado en  sus necesidades.
  
 ### Testeos de usabilidad
 
 **_Sugerencias de los usuarios_**
+
 Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar en las pantallas, comentaron que estaba bien estructurado. Y como adicional, nos sugirieron que añadamos un video explicativo.
 
-### Prototipo de alta fidelidad
+### **b) Prototipo de alta fidelidad**
 
-**_Print de los prototipos (posible gif)_**
+**_PRINT DE LOS PROTOTIPOS (posible gif)_**
 
 **_El por qué del diseño_**
+
 * Con el prototipo de baja fidelidad aterrizado, procedimos a diseñarlo en Figma considerando las imágenes y gama de colores brindada; en cada pantalla se puede percibir que está bastante alineado al diseño del site oficial del juego; eso para impactar al usuario y se familiarice aún más. 
 
 * Sobre el tipo de letra, tratamos que sea lo más cercano al usado en el site del juego.
@@ -157,12 +102,20 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 
 ## Planificación del proyecto
 
-### Tablero 
+### Tablero
+Realizamos la división de tareas en un tablero Kanban. Por cada historia desglozamos las actividades en tareas pequeñas para saber cuáles realizar y seguir un orden.
+
 ### Sprints tomados
+
+
 ### Trello
+Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
+
 ### Issues
+A nivel básico empleamos los issues haciendo match de lo que estaba en el tablero Kanban y en Trello.
+
 ### Excel
-### Google Calendar
+Colocamos todos los enlaces de consulta que utilizamos durante el proyecto.
 
 ## Futuras mejoras
 
