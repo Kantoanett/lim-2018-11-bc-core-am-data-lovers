@@ -20,6 +20,8 @@ Interfaz que brinda información puntual y digerida para **_beginners_** que no 
 
 Definimos una lista de preguntas que nos ayudaron a conocer lo que deseaba el potencial usuario; durante la entrevista destacaron estos dos elementos: la empatía y la escucha haciendo que ese momento se dé de la forma más amena y fluida posible.
 
+[imagen preguntas] (https://i.ibb.co/Xt7yMb4/preguntas-entrevista-a-usuarios.png)
+
 **_SCREENSHOT DE LAS PREGUNTAS_**
 
 Adicionalmente, armamos un [Prototipo](https://docs.google.com/presentation/d/1g8l3rIljkTPcfwSOSdN6elA6VJfjY-1tONjJ-JRDlD4/edit#slide=id.p) de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctas y entendibles.
