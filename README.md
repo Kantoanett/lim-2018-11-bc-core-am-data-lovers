@@ -3,6 +3,7 @@
 ## Índice
 
 * [Definición de producto](#definición-del-producto)
+* [Entrevistas a usuarios](#entrevistas-a-usuarios)
 * [Definición del user persona](#definición-del-user-persona)
 * [Historias de usuario](#historias-de-usuario)
 * [Diseño de la interfaz de usuario](#diseño-de-la-interfaz-de-usuario)
@@ -28,7 +29,9 @@ Adicionalmente, armamos un [Prototipo](https://docs.google.com/presentation/d/1g
 
 ### ¿Quiénes son los principales usuarios de producto?
 
- **_POR COMPLETAR SEGÚN PERFIL CREADO_** 
+<p align="center">
+  <img src="https://i.ibb.co/gzJ6qjX/User-persona.png">
+</p>
 
 ### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 
