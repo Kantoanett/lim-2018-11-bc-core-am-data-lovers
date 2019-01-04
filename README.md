@@ -6,7 +6,7 @@
 * [Definición del user persona](#definición-del-user-persona)
 * [Historias de usuario](#historias-de-usuario)
 * [Diseño de la interfaz de usuario](#diseño-de-la-interfaz-de-usuario)
-* [Recorrido por la interfaz](#recorrido-por-la-intefaz)
+* [Navegación por la interfaz](#navegación-por-la-intefaz)
 * [Planificación del proyecto](#planificación-del-proyecto)
 * [Futuras mejoras](#futuras-mejoras)
 
@@ -20,9 +20,7 @@ Interfaz que brinda información puntual y digerida para **_beginners_** que no 
 
 Definimos una lista de preguntas que nos ayudaron a conocer lo que deseaba el potencial usuario; durante la entrevista destacaron estos dos elementos: la empatía y la escucha haciendo que ese momento se dé de la forma más amena y fluida posible.
 
-[imagen preguntas] (https://i.ibb.co/Xt7yMb4/preguntas-entrevista-a-usuarios.png)
-
-**_SCREENSHOT DE LAS PREGUNTAS_**
+![imagen preguntas](https://i.ibb.co/zQb25m4/preguntas-entrevista-a-usuarios.png)
 
 Adicionalmente, armamos un [Prototipo](https://docs.google.com/presentation/d/1g8l3rIljkTPcfwSOSdN6elA6VJfjY-1tONjJ-JRDlD4/edit#slide=id.p) de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctas y entendibles.
 
@@ -45,7 +43,7 @@ En sus tiempos libres. Normalmente emplean en promedio 3 horas jugando y les agr
 
 ## Historias de usuario
 
-**_PRINT DE PANTALLA_**
+**_PRINT DE PANTALLA DE LA WEB_**
 
 Diseñamos cinco historias útiles y necesarias para que el jugador inicie el juego de la forma más cómoda posible:
 
@@ -69,15 +67,17 @@ _El usuario podrá conocer a cada campeón en específico con sus respectivas ca
 
 ### **a) Prototipo de baja fidelidad**
 
-**_PRINT DE LOS PROTOTIPOS, FOTOS DEL CUADERNO (posible gif)_**
+
+<p align="center">
+<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/929018848361389c91f31862d0f5356d.gif" width="300" height="465" border="0" alt="http://picasion.com/" /></a><br />
+</p>
+
 
 **_El por qué del diseño_**
 
 El enfoque que trabajamos desde el inicio fue pensado en _beginners_ apuntando a que sea lo más visual y práctico posible empleando estadísticas, cards, videos e información puntual que permita brindarle al usuario un diseño centrado en  sus necesidades.
  
-### Testeos de usabilidad
-
-**_Sugerencias de los usuarios_**
+**_Testeos de usabilidad / Sugerencias de los usuarios_**
 
 Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar en las pantallas, comentaron que estaba bien estructurado. Y como adicional, nos sugirieron que añadamos un video explicativo.
 
@@ -95,12 +95,11 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 
 * Zeplin: Exportamos el prototipo de Figma a Zeplin para elegir el código que se ajuste a nuestro diseño y poder usarlo en la implementación de la interfaz.
 
-### Testeos de usabilidad
-
-**_Sugerencias de los usuarios_**
+**_Testeos de usabilidad / Sugerencias de los usuarios_**
 
 ## Navegación por la interfaz
-**_POR COMPLETAR_** posible gif
+
+**_POR COMPLETAR (posible gif)_**
 
 ## Planificación del proyecto
 
@@ -113,11 +112,19 @@ Realizamos la división de tareas en un tablero Kanban. Por cada historia desglo
 ### Trello
 Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
 
+![imagen planificación Trello](https://i.ibb.co/zGHvTMH/Planificaci-n-Trello.png)
+
+[Ver aquí](https://trello.com/b/7U57QDtI/2p-data-dashboard)
+
 ### Issues
 A nivel básico empleamos los issues haciendo match de lo que estaba en el tablero Kanban y en Trello.
 
 ### Excel
-Colocamos todos los enlaces de consulta que utilizamos durante el proyecto.
+Colocamos todos los recursos que estructuramos y de consulta que utilizamos durante el proyecto.
+
+![imagen planificación excel](https://i.ibb.co/ng6cW5h/Planificaci-n-excel.png)
+
+[Ver aquí](https://docs.google.com/spreadsheets/d/1-GJYxHFvcTtkLHjPnkJGCczXnFzk07L0O0qXCXyiwDs/edit#gid=635576074)
 
 ## Futuras mejoras
 
@@ -125,3 +132,4 @@ Colocamos todos los enlaces de consulta que utilizamos durante el proyecto.
 * Responsive: Ajustar medidas para dekstop y tablet.
 * Vídeo explicativo de la interfaz.
 * Rotación de campeones: Implementar un método que permita la asignación aleatoria de campeones por semana.
+* Visualizaciones gráficas: Google Charts.
