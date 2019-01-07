@@ -32,8 +32,7 @@
   <main>
       <section id="banner">
         <img src="http://www.lol-wallpapers.com/wp-content/uploads/2018/11/Neeko-Splash-Art-HD-4k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol-3-1024x604.jpg" alt="banner">
-        <div class="container">
-          <img id="logo-lol" src="img/logo-lol.png" alt="logo-lol">
+        <div class="container container1000px">
           <h1> NUEVA GUÍA PARA EL JUGADOR</h1>
           <a href="#tutorial">Aquí</a>
         </div>
@@ -41,27 +40,30 @@
     </main>
     
 <!-- SECCIÓN: PRIMERA HISTORIA DE USUARIO - TOP 5-->
-    <section class="container background">
+    <section class="container container1000px background">
       <div class="bienvenida">
         <h2>Conoce los 5 Mejores Campeones</h2>
         <p class="description-text">¡Y empieza tu viaje por la Ruta del Invocador!</p>
       </div>
       <section id="top-cinco">
-        <div class ="container justify-content" id="descripion-de-los-top-5">
+        <div class ="container container1000px justify-content" id="descripion-de-los-top-5">
         </div>
       </section>
     </section>    
 <!-- Tutorial -->
         <p class= "end">Aprende a leer estadisticas Lol en 20 segundos</p>
-        <iframe id="tutorial" width="300" height="250" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>
+        <!--<iframe id="tutorial" src="https://www.youtube.com/embed/yrMHPABTw38" frameborder="0" allow="accelerometer; autoplay" allowfullscreen></iframe>-->
+        <a class="tutorial"  >
+          <img class="tutorial" src="img/img-tutorial.png" alt="imagen-del-tutorial">
+        </a>
 <!-- Botón para conocer todos los roles: lleva a segunda historia -->
       <div>
-        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Conoce todos los campeones</button>
+        <button id="todos-los-campeones" class="todos-los-campeones" type="button">Go to Roles</button>
       </div>
 </div>
 
 <!-- SECCIÓN: SEGUNDA HISTORIA DE USUARIO - ROLES-->
-<section id="segunda-pantalla" class="container">
+<section id="segunda-pantalla" class="container container1000px">
   <div class="bienvenida">
       <h1 class="roles-titulo">Be an Expert in Champeon Roles </h1>
       <p class="description-text">Get to know all the champions by role, and take game advantage in the Summoner's route</p>
@@ -70,26 +72,35 @@
 </section>
 
 <!-- SECCIÓN: TERCERA HISTORIA DE USUARIO - ROLES-->
-<section id="tercera-pantalla" class="container"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
+<section id="tercera-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
   <div id="titulo-del-rol" class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-    <h1 class="roles-titulo">Be An Expert in Champions</h1>
+    <h1 id= "titulo" class="roles-titulo upperstyle"></h1>
+    <p id="numero-de-campeones" class="description-text"></p>
+    <p id="description-del-rol" class="description-text"></p>
+  </div>    
+  <div id="botones-para-mayor-y-menor-vida">
+    <button id="boton-para-mayor-y-menor-vida" class="todos-los-campeones botongris">
+      Maximun Champeons with Life (Hp)
+    </button>
   </div>
-  <div id="todos-los-campeones-por-rol"></div>
+  <div id="botones-para-ordenar">
+    <button class="todos-los-campeones botónPequeño" id="ordenar-ascendente">Order by A-Z</button>
+    <button class="todos-los-campeones botónPequeño" id="ordenar-descendente">Order by Z-A</button>
+  </div>
+  <div id="todos-los-campeones-por-rol" ></div>
   <div>
-    <button id="todos-los-cardroles" class="todos-los-campeones">Roles in the Game</button>
+    <button id="todos-los-cardroles" class="todos-los-campeones marginTop">Roles in the Game</button>
   </div>
 </section>
 
 <!-- SECCIÓN: CUARTA HISTORIA DE USUARIO - ROLES-->
-<section id="cuarta-pantalla" class="container"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
+<section id="cuarta-pantalla" class="container container1000px"> <!-- Selecciono todo lo que hay dentro de la pantalla para ocultar-->
   <div class="bienvenida"><!-- Encierro el titulo dentro de un div padre que le aplica estilos automatico-->
-      <h1 class="roles-titulo">Champions</h1>
+      <h1 class="roles-titulo">Champions with Maximun Life (Hp)</h1>
   </div>
-  <div class="todos-los-campeones"></div>
+  <div id ="campeones-con-maxima-y-minima-vida"></div>
 </section>
 
-<!-- BOTÓN PARA SUBIR AL INICIO
-      <button onclick=topFunction() id="scrollToTop" title="Go to top">Top</button>-->
 <!-- FOOTER-->
       <footer>
         <div id="logo-en-footer">
@@ -106,10 +117,6 @@
 
   
     <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
     <script src="./data/lol/lol.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

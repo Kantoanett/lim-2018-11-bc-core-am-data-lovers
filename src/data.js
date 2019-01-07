@@ -1,4 +1,4 @@
-const createTemplateChampeonsFive = (array) => {
+const selectFiveChampions = (array) => {
   let newChampionArray = Object.values(array);
   const champions = newChampionArray.reduce(function(result, champion) {
     if (champion.top === 'top5') {
@@ -9,68 +9,80 @@ const createTemplateChampeonsFive = (array) => {
   return champions;
 };
 
-let mapChampionsPerRole = [];
-const createNumbersOfRoles = (array2, role) => {
+const createNumbersOfRoles = (data, role) => {
+  let mapChampionsPerRole = [];
   /* if (array2 === '') {
     console.log('esta en blanco el arreglo');
   }
   if (role === '') {
     console.log('Rol esta en blanco');
   } */
-  let arrayOfRoles = Object.values(array2);
+  let arrayOfRoles = Object.values(data);
   arrayOfRoles.filter(function(val) {
     val.tags.map((currentRole) => {
       if (currentRole === role) {
         mapChampionsPerRole.push(val);
       }
     });
+    return mapChampionsPerRole;
   }, []);
   return mapChampionsPerRole;
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-const newArray = Object.assign(entriesOfChampeons.map(currentChampeon => currentChampeon[1]).filter(currentChampeon => currentChampeon.top === 'top5'));
-console.log(newArray);
-
-// const newArray = Object.assign(entriesOfChampeons.map(currentChampeon => currentChampeon[1]).push(entriesOfChampeons.top = '').filter(currentChampeon => currentChampeon.top ==='top5'))
-// console.log(newArray);
-
-
-// añadir a la data una nueva propiedad a todos los campeones (top) object.push
-// random object/array
-// ya tenemos los campeones con el top 5
-// esos campeones van a tener 2 propiuedad top5
-=======
-const createCardsRoles = (array2) => {
-  let newRoleArray = Object.values(array2);
- /* const rolesOfChampeons = newRoleArray.reduce(function(result, role) {
-    if (LOL.tag === 'tank') {
-      let result = '';
-      result += 1;
+const sorting = (data, sortBy, sortOrder) => {
+  if (sortOrder === '') {
+    sortOrder = 1;
+  } else {
+    if (sortOrder === 'Desc') {
+      sortOrder = -1;
     }
-=======
-const order = (array) => {
-  array.sort((a, b) => {
-    if (a.name > b.name) {
-      return 1;
-    } 
-    if (a.name < b.name) {
-      return -1;
-    } 
-    return 0;
->>>>>>> fab76fb4c31bf2b0cc18e932ede530cb6da1fcc3
+  }
+  const order = data.sort(function(propertyA, propertyB) {
+    if (sortOrder === -1) {
+      return propertyB[sortBy].localeCompare(propertyA[sortBy]);
+    } else {
+      return propertyA[sortBy].localeCompare(propertyB[sortBy]);
+    }
   });
+  return order;
+};
+
+const getMaxAndMinChampions = (array, mathFunction) => {
+  let maxHpchampion = [];
+  let stats = Object.values(array);
+  let mapStatsPerChampion = stats.map(stat => { // Esta función me retorna un array de solo los stats de los campeones
+    return stat.stats;
+  });
+  const hpPerChampion = mapStatsPerChampion.reduce(function(result, champions) { // Esta función me arroja un array de los valores que tiene el key, hp(vida) de cada campeón
+    result.push(champions.hp);
+    return result;
+  }, []);
+  let mathOperation = calminAndMaxHpChampion(hpPerChampion, mathFunction); // Esta función me arroja el número maximo de vida
+
+  mapStatsPerChampion.map(accum => accum).filter(function(accum, index) {
+    if (mathOperation === accum.hp) { // Esta condición compara si el maximo de vida es igual a la vida de cada stats de los campeones
+      maxHpchampion.push(array[index]); // Si se cumple agrega a la variable el indice de ese campeon con sus
+    }
+    return maxHpchampion;
+  });
+  return maxHpchampion;
+};
+
+const calminAndMaxHpChampion = (hpPerChampion, mathFunction) => {
+  let minAndMaxHpChampion;
+  if (mathFunction === 'Max') {
+    minAndMaxHpChampion = Math.max.apply(Math, hpPerChampion);
+  } else {
+    if (mathFunction === 'Min')
+      minAndMaxHpChampion = Math.min.apply(Math, hpPerChampion);
+  }
+  return minAndMaxHpChampion;
 };
 
 window.lol = {
-  getFiveChampeons: createTemplateChampeonsFive,
-<<<<<<< HEAD
-  getRoles: createCardsRoles,
+  getFiveChampeons: selectFiveChampions,
+  filterData: createNumbersOfRoles,
+  sortData: sorting,
+  computeStats: getMaxAndMinChampions,
+  calculateStats: calminAndMaxHpChampion
 };
->>>>>>> edb8af8e380eec0b658b9c0bc9462b8d4c308ac3
-=======
-  getRoles: createNumbersOfRoles,
-  getOrderChampions: order
-};
->>>>>>> fab76fb4c31bf2b0cc18e932ede530cb6da1fcc3
