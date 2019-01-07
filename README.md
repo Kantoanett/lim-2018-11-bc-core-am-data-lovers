@@ -23,7 +23,7 @@ Definimos una lista de preguntas que nos ayudaron a conocer lo que deseaba el po
 
 ![imagen preguntas](https://i.ibb.co/zQb25m4/preguntas-entrevista-a-usuarios.png)
 
-Adicionalmente, armamos un [Prototipo](https://docs.google.com/presentation/d/1g8l3rIljkTPcfwSOSdN6elA6VJfjY-1tONjJ-JRDlD4/edit#slide=id.p) de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctas y entendibles.
+Adicionalmente, armamos un [Prototipo](https://docs.google.com/presentation/d/1g8l3rIljkTPcfwSOSdN6elA6VJfjY-1tONjJ-JRDlD4/edit#slide=id.p) de experiencia de usuario con la finalidad de que los _user stories_ sean aceptables, correctos y entendibles.
 
 ## Definición del user persona
 
@@ -60,11 +60,17 @@ _Mostrar los roles por campeón y al mismo tiempo la cantidad total de campeones
 
 * **Tercera historia**
 
-_Visualizar a los todos los campeones por determinado rol: Foto y nombre. Además podrá ver que están ordenados de forma ascendente (de la A a la Z)._
+_Visualizar a los todos los campeones por determinado rol: Foto y nombre. Además podrá ver que están ordenados de forma ascendente (de la A a la Z) y descendente (de la Z a la A)._
 
 * **Cuarta historia**
 
 _El usuario podrá conocer a cada campeón en específico con sus respectivas características._
+
+* **5ta historia**
+
+_Mostrar los niveles vida máx y mín de campeones por rol._
+
+**_NOTA: La cuarta y quinta historia están prototipadas como un pop up para facilitarle al usuario su experiencia por la interfaz; es decir, no tendría que dirigirse a una siguiente pantalla. Sin embargo; por tener tiempos ajustados: a) Al momento de aterrizar el diseño, estamos considerando esas historias como nuevas pantallas; b) Adicionalmente, la cuarta historia no ha sido plasmada en la interfaz por priorizar la quinta, donde se aplica la función compute._**
 
 ## Diseño de la interfaz de usuario
 
@@ -72,7 +78,7 @@ _El usuario podrá conocer a cada campeón en específico con sus respectivas ca
 
 
 <p align="center">
-<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/929018848361389c91f31862d0f5356d.gif" width="300" height="465" border="0" alt="http://picasion.com/" /></a><br />
+<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/42ed3014d569f816002e2e78792b8a10.gif" width="300" height="471" border="0" alt="http://picasion.com/" /></a><br />
 </p>
 
 
@@ -86,17 +92,35 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 
 ### **b) Prototipo de alta fidelidad**
 
-**_PRINT DE LOS PROTOTIPOS (posible gif)_**
+* [Figma](https://www.figma.com/file/QtDJvbuMncPICPxPAYzyvx/League-of-Legends?node-id=0%3A1): En el siguiente video se muestra cómo quedó el diseño realizado en esta herramienta:
+
+[![Prototipo figma](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=wNYZ-09tyXs&feature=youtu.be)
+
+* [Zeplin](https://zpl.io/a75eMeR): Exportamos el prototipo de Figma a Zeplin para tomar el código que se ajuste a nuestro diseño y poder usarlo en la implementación de la interfaz.
+
+<p align="center">
+<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/f454edbb1fc3f08fb701e3f3b65d28ff.gif" width="300" height="137" border="0" alt="http://picasion.com/" /></a><br />
+</p>
 
 **_El por qué del diseño_**
 
 * Con el prototipo de baja fidelidad aterrizado, procedimos a diseñarlo en Figma considerando las imágenes y gama de colores brindada; en cada pantalla se puede percibir que está bastante alineado al diseño del site oficial del juego; eso para impactar al usuario y se familiarice aún más. 
 
+* Los colores empleados son los siguientes:
+
+<p align="center">
+  <img src="https://i.ibb.co/ww4LGWn/Paleta-colores.png">
+</p>
+
+* Construimos el prototipo utilizando la acción _overlays_ para tener una manera distinta de navegación.
+
+<p align="center">
+<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/5d91ea73c7dfce84513d54f7d789b796.gif" width="300" height="378" border="0" alt="http://picasion.com/" /></a><br />
+</p>
+
 * Sobre el tipo de letra, tratamos que sea lo más cercano al usado en el site del juego.
 
 * Mobile first: Decidimos empezar a diseñar para evitar problemas al momento de ajustar código de estilo en css. 
-
-* Zeplin: Exportamos el prototipo de Figma a Zeplin para elegir el código que se ajuste a nuestro diseño y poder usarlo en la implementación de la interfaz.
 
 **_Testeos de usabilidad / Sugerencias de los usuarios_**
 
@@ -108,9 +132,6 @@ Al mostrarles el prototipo en borrador, entendieron lo que queríamos presentar 
 
 ### Tablero
 Realizamos la división de tareas en un tablero Kanban. Por cada historia desglozamos las actividades en tareas pequeñas para saber cuáles realizar y seguir un orden.
-
-### Sprints tomados
-
 
 ### Trello
 Manejamos los requerimientos en un checklist para ver qué puntos estaban/están terminados y cuáles quedan pendientes. Fue de gran utilidad para llevar un control del proceso de trabajo.
@@ -132,7 +153,6 @@ Colocamos todos los recursos que estructuramos y de consulta que utilizamos dura
 ## Futuras mejoras
 
 * Chatbox: Para atender las dudas/sugerencias de los usuarios.
-* Responsive: Ajustar medidas para dekstop y tablet.
 * Vídeo explicativo de la interfaz.
 * Rotación de campeones: Implementar un método que permita la asignación aleatoria de campeones por semana.
 * Visualizaciones gráficas: Google Charts.
