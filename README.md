@@ -46,7 +46,9 @@ En sus tiempos libres. Normalmente emplean en promedio 3 horas jugando y les agr
 
 ## Historias de usuario
 
-**_PRINT DE PANTALLA DE LA WEB_**
+<p align="center">
+  <img src="https://i.ibb.co/drD7c5r/Captura-web.png">
+</p>
 
 Diseñamos cinco historias útiles y necesarias para que el jugador inicie el juego de la forma más cómoda posible:
 
@@ -71,6 +73,8 @@ _El usuario podrá conocer a cada campeón en específico con sus respectivas ca
 _Mostrar los niveles vida máx y mín de campeones por rol._
 
 **_NOTA: La cuarta y quinta historia están prototipadas como un pop up para facilitarle al usuario su experiencia por la interfaz; es decir, no tendría que dirigirse a una siguiente pantalla. Sin embargo; por tener tiempos ajustados: a) Al momento de aterrizar el diseño, estamos considerando esas historias como nuevas pantallas; b) Adicionalmente, la cuarta historia no ha sido plasmada en la interfaz por priorizar la quinta, donde se aplica la función compute._**
+
+Para ver la interfaz dar click aquí: [League of Legends](https://www.figma.com/file/QtDJvbuMncPICPxPAYzyvx/League-of-Legends?node-id=0%3A1)
 
 ## Diseño de la interfaz de usuario
 
